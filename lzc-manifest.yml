@@ -1,10 +1,3 @@
-name: Borui
-package: community.lazycat.app.borui
-min_os_version: 1.3.8
-version: 0.2.7
-description: "一个基于Web的bore通道管理工具"
-homepage: https://github.com/dockers-x/borui
-author: czyt
 application:
   subdomain: borui
   background_task: true
@@ -18,7 +11,6 @@ application:
 services:
   borui:
     # ghcr.io/dockers-x/borui:0.2.7
-    container_name: borui
     image: registry.lazycat.cloud/czyt/dockers-x/borui:c076536133254473
     binds:
       - /lzcapp/var/data:/app/data
@@ -30,12 +22,3 @@ services:
       - INIT_ADMIN={{ .U.init_admin }}
       - INIT_ADMIN_PASSWORD={{ .U.init_admin_password }}
     network_mode: host
-
-locales:
-  zh:
-    name: "Borui"
-    description: "一个基于Web的bore通道管理工具"
-
-  en:
-    name: "Borui"
-    description: "Web-based Bore Tunnel Management"

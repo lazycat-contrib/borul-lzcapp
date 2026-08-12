@@ -1,0 +1,15 @@
+package: community.lazycat.app.borui
+version: 0.2.7
+name: Borui
+description: "一个基于 Web 的 bore 通道管理工具"
+homepage: https://github.com/dockers-x/borui
+author: czyt
+min_os_version: 1.5.0
+
+locales:
+  zh:
+    name: "Borui"
+    description: "一个基于 Web 的 bore 通道管理工具"
+  en:
+    name: "Borui"
+    description: "Web-based Bore tunnel management"

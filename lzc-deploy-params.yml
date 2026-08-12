@@ -5,9 +5,11 @@ params:
     description: "Username for the initial admin account"
 
   - id: init_admin_password
-    type: string
+    type: secret
     name: "Initial Admin Password"
     description: "Password for the initial admin account"
+    default_value: "$random(len=24)"
+    optional: false
 
 locales:
   zh:
