@@ -3,15 +3,14 @@ application:
   background_task: true
   public_path:
     - /
-
   upstreams:
     - location: /
       backend: http://host.lzcapp:3002/
-
 services:
   borui:
     # ghcr.io/dockers-x/borui:0.2.7
-    image: registry.lazycat.cloud/czyt/dockers-x/borui:c076536133254473
+    # upstream: ghcr.io/dockers-x/borui:0.2.7
+    image: registry.lazycat.cloud/czyt/dockers-x/borui:c08a391e2a0f0924
     binds:
       - /lzcapp/var/data:/app/data
     environment:
